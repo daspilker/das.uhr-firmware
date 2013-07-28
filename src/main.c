@@ -421,6 +421,14 @@ int main(void) {
 
   sei();
 
+  time.year = 13;
+  time.month = 1;
+  time.day = 1;
+  time.hours = 10;
+  time.minutes = 0;
+  time.seconds = 0;
+  writeTime(&time);
+
   for (;;) {
     _delay_ms(TRANSITION_DELAY);
     handleMatrix();
