@@ -1,11 +1,4 @@
-*~
-*.d
-*.o
-*.hex
-*.elf
-.idea/
-*.iml
-target/
-.settings/
-.project
-.classpath
+.vscode/
+build/
+sdkconfig
+sdkconfig.old

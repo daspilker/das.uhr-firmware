@@ -3,13 +3,13 @@ DAS.UHR Firmware
 
 This repository contains the source code of the firmware for the DAS.UHR word clock.
 
-The Atmel AVR Toolchain is needed for compiling and the AVR CommandLineTools for flashing.
+The Espressif IoT Development Framework (ESP-IDF) is needed for compiling and flashing.
 
 
 License
 -------
 
-Copyright 2012 Daniel A. Spilker
+Copyright 2012-2022 Daniel A. Spilker
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
