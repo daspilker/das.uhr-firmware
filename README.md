@@ -5,6 +5,16 @@ This repository contains the source code of the firmware for the DAS.UHR word cl
 
 The Espressif IoT Development Framework (ESP-IDF) is needed for compiling and flashing.
 
+When using Visual Studio Code, run "EDF-ISP: Add vscode configuation folder" and adjust the settings in `.vscode/settings.json`.
+
+Example:
+
+    {
+        ...
+        "idf.flashType": "UART",
+        "idf.portWin": "COM4",
+    }
+
 
 License
 -------
