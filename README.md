@@ -11,6 +11,7 @@ Example:
 
     {
         ...
+        "C_Cpp.intelliSenseEngine": "Tag Parser",
         "idf.flashType": "UART",
         "idf.portWin": "COM4",
     }
