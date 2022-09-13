@@ -24,24 +24,25 @@
 #include "esp_err.h"
 #include "esp_log.h"
 
-#define PIN_GSCLK         GPIO_NUM_22
+#define PIN_GSCLK         GPIO_NUM_21
 #define PIN_GSCLK_COUNTER GPIO_NUM_35
 #define PIN_SIN           GPIO_NUM_23
+#define PIN_SOUT          GPIO_NUM_19
 #define PIN_SCLK          GPIO_NUM_18
-#define PIN_BLANK         GPIO_NUM_21
-#define PIN_XLAT          GPIO_NUM_19
+#define PIN_BLANK         GPIO_NUM_22
+#define PIN_XLAT          GPIO_NUM_17
 
 static const char *TAG = "DAS.UHR Display";
 
 static const gpio_num_t GPIO_ROWS[] = {
-    GPIO_NUM_12,
+    GPIO_NUM_15,
     GPIO_NUM_13,
     GPIO_NUM_14,
-    GPIO_NUM_15,
-    GPIO_NUM_25,
-    GPIO_NUM_26,
-    GPIO_NUM_27,
+    GPIO_NUM_12,
     GPIO_NUM_32,
+    GPIO_NUM_27,
+    GPIO_NUM_26,
+    GPIO_NUM_25,
     GPIO_NUM_33,
 };
 
@@ -171,7 +172,7 @@ static void init_spi()
     spi_bus_config_t bus_config = {
         .sclk_io_num = PIN_SCLK,
         .mosi_io_num = PIN_SIN,
-        .miso_io_num = -1,
+        .miso_io_num = PIN_SOUT,
         .quadwp_io_num = -1,
         .quadhd_io_num = -1,
         .max_transfer_sz = 24 * 8,
